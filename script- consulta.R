@@ -24,21 +24,16 @@ dados2
 
 #Lendo o arquivo direto da internet
 
-
 dados3 <- read.csv2(file="http://www.estatisticacomr.uff.br/wp-content/uploads/2015/07/acidentes.csv")
 dados3
-
 
 ##Exercícios 
 
 #1.Consulte os elementos de dados3 cuja idade seja maior que 35
 
-
 #2.Quais elementos de dados3 cuja variável sexo seja f?
 
-
 #3.Acrescente uma nova coluna ao data frame, acrescentando 5 à idade de cada elemento.
-
 
 ##Respostas:
 
@@ -50,11 +45,9 @@ dados3$idade[dados3$idade>35]
 #2.
 dados3$sexo[dados3$sexo=="f"]
 
-
 #3.
 dados3[,5] = dados3[,2]+5
 dados3
-
 
 ## Medidas Estatísticas
 
@@ -98,7 +91,6 @@ range(m)
 a <- 1:3
 b <- 4:6
 
-
 matriz_A <- cbind(a,b)
 
 # Função média e função mediana : Calcula a média e a mediana dos números
@@ -134,7 +126,6 @@ Vetor
 matriz <- matrix(1:9,3,3)
 matriz
 
-
 var(Vetor)
 sqrt(var(Vetor))
 sd(Vetor)
@@ -166,9 +157,6 @@ M
 #3.Obtenha os quantis 0.20 e 0.85 e aplique a função summary no vetor P <- 1:100
 
 #4.Repita as operações da questão 2 retirando os dados faltantes para o vetor L <- c(1:15,NA,17:20)
-
-
-
 
 
 ##Respostas:
