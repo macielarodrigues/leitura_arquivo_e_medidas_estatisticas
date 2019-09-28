@@ -156,7 +156,7 @@ quantile(matriz, c(0.15, 0.35, 0.80))
 
 ##Exercícios 
 
-M <- cbind(x1=1:6, x2=rep(3,6), x3= c(2,2,2,7,7,7))
+M <- cbind(x1 <- 1:6, x2 <- rep(3,6), x3 <- c(2,2,2,7,7,7))
 M
 
 #1.Obtenha o maior e o menor valor da matriz M
