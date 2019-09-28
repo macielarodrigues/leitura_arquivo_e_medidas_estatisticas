@@ -11,12 +11,12 @@
 #Você deve ter o arquivo csv no seu computador.
 #Use o comando abaixo para fornecer o local do
 
-local=choose.files() #escolha o arquivo csv, este comando funciona no sistema windows.
+local <- choose.files() #escolha o arquivo csv, este comando funciona no sistema windows.
 local
 
-dados1=read.csv2(file=local)
+dados1 <- read.csv2(file=local)
 
-dados2=read.csv(file=local,sep=";")
+dados2 <- read.csv(file=local,sep=";")
 
 dados1
 
@@ -25,7 +25,7 @@ dados2
 #Lendo o arquivo direto da internet
 
 
-dados3=read.csv2(file="http://www.estatisticacomr.uff.br/wp-content/uploads/2015/07/acidentes.csv")
+dados3 <- read.csv2(file="http://www.estatisticacomr.uff.br/wp-content/uploads/2015/07/acidentes.csv")
 dados3
 
 
@@ -52,7 +52,7 @@ dados3$sexo[dados3$sexo=="f"]
 
 
 #3.
-dados3[,5]= dados3[,2]+5
+dados3[,5] = dados3[,2]+5
 dados3
 
 
@@ -156,7 +156,7 @@ quantile(matriz, c(0.15, 0.35, 0.80))
 
 ##Exercícios 
 
-M=cbind(x1=1:6, x2=rep(3,6), x3= c(2,2,2,7,7,7))
+M <- cbind(x1=1:6, x2=rep(3,6), x3= c(2,2,2,7,7,7))
 M
 
 #1.Obtenha o maior e o menor valor da matriz M
